@@ -1,5 +1,16 @@
-<div *ngIf="balance">
-  <p>Amount: {{ balance.amount }}</p>
-  <p>Income: {{ balance.income }}</p>
-  <p>Expenses: {{ balance.expenses }}</p>
+<div class="balance" *ngIf="balance">
+  <div class="balance__amount">
+    <h4>Total Balance:</h4>
+    <h2>{{ balance.amount | currency : "COP" }}</h2>
+  </div>
+  <div class="balance__cash">
+    <div class="income">
+      <h4>Income</h4>
+      <h3>{{ balance.income | currency : "COP" }}</h3>
+    </div>
+    <div class="expenses">
+      <h4>Expenses</h4>
+      <h3>{{ balance.expenses | currency : "COP" }}</h3>
+    </div>
+  </div>
 </div>

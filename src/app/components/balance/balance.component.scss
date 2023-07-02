@@ -1,0 +1,40 @@
+@use "../../../styles" as s;
+
+.balance {
+  font-family: s.$font-family;
+  background-color: #75b5ff;
+  padding: 20px;
+  grid-row: auto;
+  border-radius: 20px;
+  &__amount {
+    h2 {
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  &__cash {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .income {
+      color: #2db639;
+    }
+    .expenses {
+      color: #f12d2d;
+    }
+  }
+}
