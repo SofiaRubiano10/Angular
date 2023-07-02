@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Balance } from '../../models/balance.model';
 
 @Component({
   selector: 'app-balance',
@@ -7,4 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class BalanceComponent {
   @Input() title: string = '';
+  @Input() balance: Balance = {
+    amount: 55_000,
+    income: 100_000,
+    expenses: 45_000,
+  };
 }
