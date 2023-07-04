@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Balance } from './models/balance.model';
+import { Transaction } from './models/transaction.model';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,30 @@ export class AppComponent {
     income: 150_000,
     expenses: 50_000,
   };
+  transactions: Transaction[] = [
+    {
+      type: 'expense',
+      amount: 45,
+      category: 'Food',
+      date: new Date(2023, 6, 26),
+    },
+    {
+      type: 'expense',
+      amount: 280,
+      category: 'Shopping',
+      date: new Date(2023, 6, 24),
+    },
+    {
+      type: 'expense',
+      amount: 60,
+      category: 'Entertainment',
+      date: new Date(2023, 6, 22),
+    },
+    {
+      type: 'income',
+      amount: 500,
+      category: 'Payroll',
+      date: new Date(2023, 6, 20),
+    },
+  ];
 }
