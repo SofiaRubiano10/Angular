@@ -1,3 +1,29 @@
-.grande {
-  border: solid red 1px;
+@use "../../../styles.scss" as s;
+
+.transaction {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: s.$font-family;
+  align-items: center;
+
+  &__category {
+    color: #75b5ff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  &___amount {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+  }
+  &__date {
+    color: #737373;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: right;
+  }
 }

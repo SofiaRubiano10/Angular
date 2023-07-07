@@ -5,4 +5,15 @@
   <p>{{ transaction.date }}</p>
   <br />
 </div> -->
-<p>transaction</p>
+
+<div class="transaction">
+  <div class="transaction__category">
+    <h5>{{ transaction.category }}</h5>
+  </div>
+  <div>
+    <h5 class="transaction__amount">
+      {{ transaction.amount | currency : "COP" }}
+    </h5>
+    <h5 class="transaction__date">{{ transaction.date | date }}</h5>
+  </div>
+</div>
