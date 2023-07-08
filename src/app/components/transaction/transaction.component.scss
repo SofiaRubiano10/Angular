@@ -9,11 +9,33 @@
   font-family: s.$font-family;
   align-items: center;
 
+  &__sub {
+    display: flex;
+    gap: 5px;
+  }
+  &__icon {
+    font-weight: 900;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__icon-income {
+    background-color: #7bdb83fd;
+    color: #347c3afd;
+  }
+  &__icon-expense {
+    background-color: #ff4e4e;
+    color: #bd2929;
+  }
+
   &__category {
     color: #75b5ff;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: capitalize;
+    display: flex;
   }
   &___amount {
     font-size: 1rem;
