@@ -37,6 +37,13 @@
     text-transform: capitalize;
     display: flex;
   }
+  &__delete {
+    color: #ff4e4e;
+    cursor: pointer;
+    &:hover {
+      color: #bd2929;
+    }
+  }
   &___amount {
     font-size: 1rem;
     font-weight: 500;
