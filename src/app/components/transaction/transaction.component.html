@@ -34,6 +34,8 @@
     >
       {{ transaction.amount | currency : "COP" }}
     </h5>
-    <h5 class="transaction__date">{{ transaction.date | date }}</h5>
+    <h5 class="transaction__date" [ngStyle]="dateStyles">
+      {{ transaction.date | date }}
+    </h5>
   </div>
 </div>
