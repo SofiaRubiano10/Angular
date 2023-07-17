@@ -43,4 +43,14 @@ export class AppComponent {
       date: new Date(2023, 6, 20),
     },
   ];
+  removeTransaction(transactionId: string) {
+    //console.log(`We trying to remove transaction ${transactionId}`);
+    //para ver en consola con qué información voy a trabajar
+    // console.log(this.transactions);
+    // console.log(transactionId);
+
+    this.transactions = this.transactions.filter(
+      (transaction) => transaction.id !== transactionId
+    );
+  }
 }
